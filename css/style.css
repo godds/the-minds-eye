@@ -653,3 +653,8 @@ h5 {
   color: #3584a0;
   margin: 0;
 }
+#finish h5 {
+  font-size: 36px;
+  color: #aaaaaa;
+  margin-top: 20px;
+}
