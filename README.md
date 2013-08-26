@@ -11,5 +11,6 @@ Graham is a designer and developer working across desktop, web and mobile, speci
 ##[Hand-out Notes](https://github.com/godds/the-minds-eye/blob/master/TheMindsEye.pdf)
 
 ###Presented at:
+* [UX Cambridge 2013](http://uxcambridge.net/uxc2013/sessions/index.php?session=4) (5th & 6th September 2013)
 * [UX Scotland 2013](http://uxscotland.net/sessions/index.php?session=6) (20th & 21st June 2013)
 * [UXPA-Scotland](http://uxpa-scotland.org/events.php/the-minds-eye-the-science-behind-data-visualisation) (23rd April 2013)

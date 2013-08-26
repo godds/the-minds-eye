@@ -1,12 +1,13 @@
 var overviewChart = function(selector) {
     var data =
-        [ { label: "What? Why?", time: 8, id: "set-the-scene" },
-          { label: "Thinking, Fast and Slow", time: 10, id: "thinking-fast-and-slow" },
-          { label: "The Visual Process", time: 12, id: "visual-process" },
+        [ //{ label: "First, a story...", time: 5, id: "a-story" },
+          { label: "Thinking, Fast and Slow", time: 4, id: "thinking-fast-and-slow" },
+          { label: "Why Visualisation?", time: 2, id: "why-visualisation" },
+          { label: "How We See", time: 10, id: "visual-process" },
           { label: "Perceiving Values", time: 8, id: "perceiving-values" },
-          { label: "Chartjunk?", time: 5, id: "chartjunk-debate" }];
+          { label: "Perceiving Relationships", time: 7, id: "perceiving-relationships" } ];
 
-    var margin = { top: 58, right: 10, bottom: 30, left: 310 },
+    var margin = { top: 58, right: 10, bottom: 30, left: 330 },
         width = 860 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
     var x = d3.scale.linear()

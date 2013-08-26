@@ -1,3 +1,4 @@
+@import "normalize.css";
 body {
   background: #333333;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -85,70 +86,44 @@ h5 {
   font-size: 24px;
   fill: #aaaaaa;
 }
-.impress-on-set-the-scene #overview.past {
-  opacity: 1;
-}
-.impress-on-set-the-scene #overview.past .thinking-fast-and-slow,
-.impress-on-set-the-scene #overview.past .visual-process,
-.impress-on-set-the-scene #overview.past .perceiving-values,
-.impress-on-set-the-scene #overview.past .perceiving-structure,
-.impress-on-set-the-scene #overview.past .chartjunk-debate,
-.impress-on-set-the-scene #overview.past .wrap-up {
-  opacity: 0.4;
-}
 .impress-on-thinking-fast-and-slow #overview.past {
   opacity: 1;
 }
-.impress-on-thinking-fast-and-slow #overview.past .set-the-scene,
+.impress-on-thinking-fast-and-slow #overview.past .a-story,
+.impress-on-thinking-fast-and-slow #overview.past .why-visualisation,
 .impress-on-thinking-fast-and-slow #overview.past .visual-process,
 .impress-on-thinking-fast-and-slow #overview.past .perceiving-values,
-.impress-on-thinking-fast-and-slow #overview.past .perceiving-structure,
-.impress-on-thinking-fast-and-slow #overview.past .chartjunk-debate,
-.impress-on-thinking-fast-and-slow #overview.past .wrap-up {
+.impress-on-thinking-fast-and-slow #overview.past .perceiving-relationships {
   opacity: 0.4;
 }
 .impress-on-visual-process #overview.past {
   opacity: 1;
 }
-.impress-on-visual-process #overview.past .set-the-scene,
+.impress-on-visual-process #overview.past .a-story,
+.impress-on-visual-process #overview.past .why-visualisation,
 .impress-on-visual-process #overview.past .thinking-fast-and-slow,
 .impress-on-visual-process #overview.past .perceiving-values,
-.impress-on-visual-process #overview.past .perceiving-structure,
-.impress-on-visual-process #overview.past .chartjunk-debate,
-.impress-on-visual-process #overview.past .wrap-up {
+.impress-on-visual-process #overview.past .perceiving-relationships {
   opacity: 0.4;
 }
 .impress-on-perceiving-values #overview.past {
   opacity: 1;
 }
-.impress-on-perceiving-values #overview.past .set-the-scene,
+.impress-on-perceiving-values #overview.past .a-story,
+.impress-on-perceiving-values #overview.past .why-visualisation,
 .impress-on-perceiving-values #overview.past .thinking-fast-and-slow,
 .impress-on-perceiving-values #overview.past .visual-process,
-.impress-on-perceiving-values #overview.past .perceiving-structure,
-.impress-on-perceiving-values #overview.past .chartjunk-debate,
-.impress-on-perceiving-values #overview.past .wrap-up {
+.impress-on-perceiving-values #overview.past .perceiving-relationships {
   opacity: 0.4;
 }
-.impress-on-perceiving-structure #overview.past {
+.impress-on-perceiving-relationships #overview.past {
   opacity: 1;
 }
-.impress-on-perceiving-structure #overview.past .set-the-scene,
-.impress-on-perceiving-structure #overview.past .thinking-fast-and-slow,
-.impress-on-perceiving-structure #overview.past .visual-process,
-.impress-on-perceiving-structure #overview.past .perceiving-values,
-.impress-on-perceiving-structure #overview.past .chartjunk-debate,
-.impress-on-perceiving-structure #overview.past .wrap-up {
-  opacity: 0.4;
-}
-.impress-on-chartjunk-debate #overview.past {
-  opacity: 1;
-}
-.impress-on-chartjunk-debate #overview.past .set-the-scene,
-.impress-on-chartjunk-debate #overview.past .thinking-fast-and-slow,
-.impress-on-chartjunk-debate #overview.past .visual-process,
-.impress-on-chartjunk-debate #overview.past .perceiving-values,
-.impress-on-chartjunk-debate #overview.past .perceiving-structure,
-.impress-on-chartjunk-debate #overview.past .wrap-up {
+.impress-on-perceiving-relationships #overview.past .a-story,
+.impress-on-perceiving-relationships #overview.past .why-visualisation,
+.impress-on-perceiving-relationships #overview.past .thinking-fast-and-slow,
+.impress-on-perceiving-relationships #overview.past .visual-process,
+.impress-on-perceiving-relationships #overview.past .perceiving-values {
   opacity: 0.4;
 }
 #data-visualisation {
