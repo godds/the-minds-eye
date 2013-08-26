@@ -5,8 +5,8 @@
 @blue: #3584a0;
 @grey: #aaa;
 
-@sansFontFamily: 'Segoe UI', Arial, sans-serif;
-@lightSansFontFamily: 'Segoe UI Light', Arial, sans-serif;
+@sansFontFamily: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+@lightSansFontFamily: @sansFontFamily;
 
 body {
   background: @black;
@@ -64,6 +64,15 @@ h1, h2, h3, h4, h5 {
   &.present, &.active {
     opacity: 1;
   }
+}
+
+.credit {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 #title {
@@ -169,33 +178,15 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-#data-visualisation {
-  height: 350px;
-
-  blockquote {
-    font-size: 48px;
-
-    p {
-      margin: 0 0 20px 0;
-    }
-
-    footer {
-      font-size: 36px;
-      color: @grey;
-      margin-left: 50px;
-    }
-  }
-
-  &.past {
-    opacity: 1;
+#a-story {
+  h1 {
+    font-size: 72px;
+    margin: -75px auto 0 auto;
+    position: absolute;
+    left: 220px;
+    top: 50%;
   }
 }
-#history {
-  &.past {
-    opacity: 1;
-  }
-}
-
 #john-arbuthnot {
   text-align: center;
   height: 600px;
@@ -283,6 +274,28 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+#data-visualisation {
+  height: 350px;
+
+  blockquote {
+    font-size: 48px;
+
+    p {
+      margin: 0 0 20px 0;
+    }
+
+    footer {
+      font-size: 36px;
+      color: @grey;
+      margin-left: 50px;
+    }
+  }
+
+  &.past {
+    opacity: 1;
+  }
+}
+
 #system1-example {
   text-align: center;
   img {
@@ -324,12 +337,12 @@ h1, h2, h3, h4, h5 {
 
 #senses-bandwidth {
   width: 820px;
-  height: 584px;
+  height: 620px;
   padding: 0;
 }
 #senses-bandwidth2 {
   width: 640px;
-  height: 595px;
+  height: 620px;
   padding: 0;
   &.past {
     opacity: 1;
@@ -337,7 +350,7 @@ h1, h2, h3, h4, h5 {
 }
 #senses-bandwidth3 {
   width: 940px;
-  height: 595px;
+  height: 620px;
   padding: 0;
   &.past {
     opacity: 1;
@@ -358,33 +371,6 @@ h1, h2, h3, h4, h5 {
   .impress-on-fovea5 &,
   .impress-on-fovea6 & {
     opacity: 0;
-  }
-}
-#the-eye {
-  width: 708px;
-  height: 508px;
-}
-#fovea {
-  width: 494px;
-  height: 494px;
-}
-.fixations {
-  width: 900px;
-  height: 600px;
-}
-#fovea2 {
-  .impress-on-fovea3 &,
-  .impress-on-fovea4 &,
-  .impress-on-fovea5 &,
-  .impress-on-fovea6 & {
-    opacity: 1;
-  }
-}
-#fovea3 {
-  .impress-on-fovea4 &,
-  .impress-on-fovea5 &,
-  .impress-on-fovea6 & {
-    opacity: 1;
   }
 }
 #iconic-memory {
@@ -513,19 +499,18 @@ h1, h2, h3, h4, h5 {
 }
 #top-down-vs-bottom-up {
   width: 710px;
-  height: 455px;
+  height: 550px;
   margin-top: 37px;
   &.past {
     opacity: 1;
+  }
+  svg {
+    margin-top: 50px;
   }
 }
 #top-down-vs-bottom-up-example {
   width: 520px;
   height: 537px;
-}
-#brain {
-  width: 516px;
-  height: 398px;
 }
 
 #preattentive-processing-example,
@@ -543,7 +528,7 @@ h1, h2, h3, h4, h5 {
 }
 #preattentive-visual-attributes {
   width: 579px;
-  height: 612px;
+  height: 680px;
   &.past {
     opacity: 1;
   }
@@ -568,7 +553,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #cleveland-mcgill {
-  width: 650px;
+  width: 900px;
   height: 747px;
   .scale {
     .transition(opacity 1s);
@@ -578,6 +563,16 @@ h1, h2, h3, h4, h5 {
     .scale {
       opacity: 0;
     }
+  }
+  svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .credit {
+    text-align: right;
+    width: 180px;
+    left: auto;
+    right: 0;
   }
 }
 #bar-chart,
@@ -617,57 +612,6 @@ h1, h2, h3, h4, h5 {
   height: 620px;
 }
 
-#holmes-vs-tufte {
-  width: 800px;
-  height: 600px;
-  text-align: center;
-  img {
-    width: 600px;
-  }
-}
-#data-ink-ratio {
-  width: 900px;
-  height: 100px;
-  h1 {
-    font-size: 48px;
-    text-align: center;
-  }
-}
-#holmes-vs-tufte2 {
-  width: 900px;
-  height: 360px;
-  img {
-    width: 350px;
-    float: left;
-  }
-  svg {
-    float: right;
-  }
-  &.past {
-    opacity: 1;
-  }
-}
-#minimalist-bar-chart {
-  width: 900px;
-  height: 300px;
-  img {
-    height: 300px;
-    float: left;
-  }
-  svg {
-    float: right;
-  }
-  &.past {
-    opacity: 1;
-  }
-}
-#presentation-vs-exploration {
-  width: 760px;
-  height: 100px;
-  &.past {
-    opacity: 1;
-  }
-}
 #moritz-stefaner {
   width: 1035px;
   height: 532px;
