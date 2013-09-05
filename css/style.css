@@ -94,6 +94,9 @@ h5 {
   font-size: 24px;
   fill: #aaaaaa;
 }
+#overview.past {
+  opacity: 1;
+}
 .impress-on-thinking-fast-and-slow #overview.past {
   opacity: 1;
 }
@@ -246,7 +249,7 @@ h5 {
   margin-top: -225px;
 }
 #system1-example.past {
-  opacity: 0.3;
+  opacity: 1;
 }
 #system2-example h1 {
   font-size: 72px;
@@ -258,7 +261,7 @@ h5 {
   margin-left: -170px;
 }
 #system2-example.past {
-  opacity: 0.3;
+  opacity: 1;
 }
 .system1-vs-system2 {
   width: 755px;
@@ -267,6 +270,13 @@ h5 {
 }
 #system1-vs-system2-4.past {
   opacity: 1;
+}
+#why-visualisation {
+  text-align: center;
+}
+#why-visualisation > svg {
+  fill: #ffffff;
+  width: 70%;
 }
 #senses-bandwidth {
   width: 820px;
@@ -296,13 +306,7 @@ h5 {
 #light-into-eyes.past {
   opacity: 1;
 }
-.impress-on-the-eye #light-into-eyes,
-.impress-on-fovea #light-into-eyes,
-.impress-on-fovea2 #light-into-eyes,
-.impress-on-fovea3 #light-into-eyes,
-.impress-on-fovea4 #light-into-eyes,
-.impress-on-fovea5 #light-into-eyes,
-.impress-on-fovea6 #light-into-eyes {
+.impress-on-top-down-vs-bottom-up-example #light-into-eyes.past {
   opacity: 0;
 }
 #iconic-memory {
@@ -312,6 +316,9 @@ h5 {
 }
 #iconic-memory.past {
   opacity: 1;
+}
+.impress-on-top-down-vs-bottom-up-example #iconic-memory.past {
+  opacity: 0;
 }
 #features {
   width: 500px;
@@ -326,6 +333,9 @@ h5 {
   opacity: 1;
 }
 #features.past h1 {
+  opacity: 0;
+}
+.impress-on-top-down-vs-bottom-up-example #features.past {
   opacity: 0;
 }
 #patterns {
@@ -343,6 +353,9 @@ h5 {
 #patterns.past h1 {
   opacity: 0;
 }
+.impress-on-top-down-vs-bottom-up-example #patterns.past {
+  opacity: 0;
+}
 #visual-working-memory {
   width: 640px;
   height: 204px;
@@ -350,6 +363,9 @@ h5 {
 }
 #visual-working-memory.past {
   opacity: 1;
+}
+.impress-on-top-down-vs-bottom-up-example #visual-working-memory.past {
+  opacity: 0;
 }
 #objects,
 #objects2,
@@ -363,6 +379,11 @@ h5 {
 #objects2.past,
 #objects3.past {
   opacity: 1;
+}
+.impress-on-top-down-vs-bottom-up-example #objects.past,
+.impress-on-top-down-vs-bottom-up-example #objects2.past,
+.impress-on-top-down-vs-bottom-up-example #objects3.past {
+  opacity: 0;
 }
 #objects.past h1 {
   opacity: 0;
@@ -448,13 +469,13 @@ h5 {
 #long-term-memory.past {
   opacity: 1;
 }
+.impress-on-top-down-vs-bottom-up-example #long-term-memory.past {
+  opacity: 0;
+}
 #top-down-vs-bottom-up {
   width: 710px;
   height: 550px;
   margin-top: 37px;
-}
-#top-down-vs-bottom-up.past {
-  opacity: 1;
 }
 #top-down-vs-bottom-up svg {
   margin-top: 50px;
@@ -462,6 +483,46 @@ h5 {
 #top-down-vs-bottom-up-example {
   width: 520px;
   height: 537px;
+}
+#visual-process-overview.past {
+  opacity: 1;
+}
+#visual-process-overview svg {
+  position: absolute;
+  left: 459px;
+  top: 100px;
+  fill: none;
+  stroke: #ffffff;
+}
+#visual-process-overview h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  position: absolute;
+  top: 120px;
+  color: #ffffff;
+}
+#visual-process-overview h2.system-1 {
+  left: 160px;
+}
+#visual-process-overview h2.system-2 {
+  left: 550px;
+}
+#preattentive-processing {
+  width: 600px;
+  height: 200px;
+  text-align: center;
+}
+#preattentive-processing.past {
+  opacity: 1;
+}
+#preattentive-processing h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
 }
 #preattentive-processing-example,
 #preattentive-processing-example2 {
@@ -558,12 +619,140 @@ h5 {
 #treemap {
   height: 620px;
 }
-#moritz-stefaner {
+#scales {
+  width: 50px;
+  height: 440px;
+}
+#scales.past {
+  opacity: 1;
+}
+.gestalt {
+  text-align: center;
+  width: 600px;
+  height: 500px;
+}
+.gestalt svg {
+  width: 100%;
+}
+.gestalt.past {
+  opacity: 1;
+}
+.gestalt.example.past {
+  opacity: 0;
+}
+.impress-on-gestalt-similarity-example #gestalt-similarity {
+  opacity: 0;
+}
+#gestalt-similarity-example text {
+  display: none;
+}
+#gestalt-similarity-example .axis path,
+#gestalt-similarity-example .axis line {
+  fill: none;
+  stroke: #aaaaaa;
+  shape-rendering: crispEdges;
+}
+#gestalt-similarity-example .axis text {
+  font-size: 20px;
+  fill: #aaaaaa;
+}
+.impress-on-gestalt-proximity-example2 #gestalt-proximity {
+  opacity: 0;
+}
+#gestalt-proximity-example2 svg {
+  margin-top: 190px;
+}
+.impress-on-gestalt-enclosure-example #gestalt-enclosure,
+.impress-on-gestalt-enclosure-example2 #gestalt-enclosure {
+  opacity: 0;
+}
+#gestalt-enclosure-example2 svg {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+}
+#gestalt-enclosure-example2 svg:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+#gestalt-enclosure-example2 svg:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+#gestalt-enclosure-example2 svg:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+#gestalt-enclosure-example2 svg:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+.impress-on-gestalt-connection-example #gestalt-connection {
+  opacity: 0;
+}
+#gestalt-principles,
+#ordering {
+  height: 100px;
+  text-align: center;
+}
+#gestalt-principles h1,
+#ordering h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+#gestalt-principles.past,
+#ordering.past {
+  opacity: 1;
+}
+.ordering-example {
+  height: 650px;
+  padding: 20px;
+  text-align: center;
+}
+.ordering-example h1 {
+  margin: 0 0 40px 0;
+  font-size: 40px;
+}
+.ordering-example .bar {
+  fill: #3584a0;
+}
+.ordering-example text {
+  fill: #ffffff;
+  font-size: 28px;
+}
+.ordering-example .axis path,
+.ordering-example .axis line {
+  fill: none;
+  stroke: #aaaaaa;
+  shape-rendering: crispEdges;
+}
+.ordering-example .axis text {
+  font-size: 20px;
+  fill: #aaaaaa;
+}
+.ordering-example .axis-title {
+  font-size: 24px;
+  fill: #aaaaaa;
+}
+.ordering-example.past {
+  opacity: 1;
+}
+#hannah-fairfield {
+  text-align: center;
+}
+#hannah-fairfield > img {
+  height: 660px;
+}
+#hannah-fairfield.past {
+  opacity: 1;
+}
+#oecd-index {
   width: 1035px;
-  height: 532px;
+  height: 600px;
 }
 #finish {
-  height: 340px;
+  height: 400px;
   text-align: center;
 }
 #finish h1 {
@@ -575,8 +764,12 @@ h5 {
   color: #3584a0;
   margin: 0;
 }
+#finish h4 {
+  margin-bottom: 80px;
+}
 #finish h5 {
-  font-size: 36px;
+  font-size: 24px;
   color: #aaaaaa;
-  margin-top: 20px;
+  margin: 0;
+  padding: 0;
 }
