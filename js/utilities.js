@@ -4,8 +4,8 @@ var overviewChart = function(selector, sortFunction) {
           { label: "Thinking, Fast and Slow", time: 4, id: "thinking-fast-and-slow" },
           { label: "Why Visualisation?", time: 2, id: "why-visualisation" },
           { label: "How We See", time: 10, id: "visual-process" },
-          { label: "Perceiving Values", time: 8, id: "perceiving-values" },
-          { label: "Perceiving Relationships", time: 7, id: "perceiving-relationships" } ];
+          { label: "Perceiving Values", time: 7, id: "perceiving-values" },
+          { label: "Perceiving Relationships", time: 5, id: "perceiving-relationships" } ];
 
     if (sortFunction) {
         data.sort(sortFunction);

@@ -538,6 +538,15 @@ h5 {
 #preattentive-processing-example2 .de-emphasise {
   opacity: 0.3;
 }
+#perceiving-values {
+  width: 600px;
+}
+#perceiving-values h3 {
+  font-size: 48px;
+  display: inline-block;
+  position: absolute;
+  top: 420px;
+}
 #preattentive-visual-attributes {
   width: 579px;
   height: 680px;
@@ -625,6 +634,16 @@ h5 {
 }
 #scales.past {
   opacity: 1;
+}
+#perceiving-relationships {
+  width: 600px;
+}
+#perceiving-relationships h3 {
+  font-size: 48px;
+  display: inline-block;
+  position: absolute;
+  top: 420px;
+  right: 0;
 }
 .gestalt {
   text-align: center;
@@ -747,7 +766,7 @@ h5 {
 #hannah-fairfield.past {
   opacity: 1;
 }
-#oecd-index {
+#recommended-reading {
   width: 1035px;
   height: 600px;
 }
