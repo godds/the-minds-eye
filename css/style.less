@@ -1,18 +1,19 @@
 @import "normalize.css";
+@import "fonts.css";
 
 @black: #333;
-@white: #fff;
+@white: #fafafa;
 @blue: #3584a0;
-@grey: #aaa;
+@grey: #888;
 
-@sansFontFamily: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+@sansFontFamily: "Fira Sans", Helvetica, Arial, sans-serif;
 @lightSansFontFamily: @sansFontFamily;
 
 body {
-  background: @black;
+  background: @white;
   font-family: @sansFontFamily;
-  font-weight: normal;
-  color: @white;
+  font-weight: 300;
+  color: @black;
   min-height: 740px;
   line-height: 1.4;
 }
@@ -73,6 +74,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   bottom: 0;
   text-align: center;
+  font-weight: 200;
 }
 
 #title {
@@ -113,7 +115,7 @@ h1, h2, h3, h4, h5 {
     fill: @blue;
   }
   text {
-    fill: @white;
+    fill: @black;
     font-size: 28px;
   }
   .axis {
@@ -141,6 +143,17 @@ h1, h2, h3, h4, h5 {
 
     .a-story,
     .why-visualisation,
+    .visual-process,
+    .perceiving-values,
+    .perceiving-relationships {
+      opacity: 0.4;
+    }
+  }
+  .impress-on-why-visualisation &.past {
+    opacity: 1;
+
+    .a-story,
+    .thinking-fast-and-slow,
     .visual-process,
     .perceiving-values,
     .perceiving-relationships {
@@ -210,6 +223,7 @@ h1, h2, h3, h4, h5 {
     margin-right: 30px;
 
     font-family: @lightSansFontFamily;
+    font-weight: 200;
     font-size: 20px;
     line-height: 24px;
     text-align: right;
@@ -239,6 +253,7 @@ h1, h2, h3, h4, h5 {
   }
   svg {
     margin-top: -65px;
+    font-weight: 200;
   }
   &.past {
     opacity: 1;
@@ -339,13 +354,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-#why-visualisation {
-  text-align: center;
-  > svg {
-    fill: @white;
-    width: 70%;
-  }
-}
 #senses-bandwidth {
   width: 820px;
   height: 620px;
@@ -541,7 +549,7 @@ h1, h2, h3, h4, h5 {
     left: 459px;
     top: 100px;
     fill: none;
-    stroke: @white;
+    stroke: @black;
   }
   h2 {
     display: inline-block;
@@ -550,7 +558,7 @@ h1, h2, h3, h4, h5 {
     font-size: 50px;
     position: absolute;
     top: 120px;
-    color: @white;
+    color: @black;
 
     &.system-1 {
       left: 160px;
@@ -562,7 +570,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #preattentive-processing {
-  width: 600px;
+  width: 700px;
   height: 200px;
   text-align: center;
   &.past {
@@ -733,27 +741,9 @@ h1, h2, h3, h4, h5 {
     opacity: 0;
   }
 }
-#gestalt-enclosure-example2 {
-  svg {
-    width: 300px;
-    height: 250px;
-    position: absolute;
-    &:nth-child(1) {
-      top: 0;
-      left: 0;
-    }
-    &:nth-child(2) {
-      top: 0;
-      right: 0;
-    }
-    &:nth-child(3) {
-      bottom: 0;
-      left: 0;
-    }
-    &:nth-child(4) {
-      bottom: 0;
-      right: 0;
-    }
+#gestalt-enclosure-example {
+  > img {
+    width: 100%;
   }
 }
 #gestalt-connection {
@@ -787,7 +777,7 @@ h1, h2, h3, h4, h5 {
     fill: @blue;
   }
   text {
-    fill: @white;
+    fill: @black;
     font-size: 28px;
   }
   .axis {
@@ -809,19 +799,28 @@ h1, h2, h3, h4, h5 {
     opacity: 1;
   }
 }
-#hannah-fairfield {
+#fairfield {
   text-align: center;
-  > img {
-    height: 660px;
-  }
-  &.past {
-    opacity: 1;
+  width: 1000px;
+  > svg {
+    width: 100%;
   }
 }
-
-#oecd-index {
-  width: 1035px;
-  height: 600px;
+#accurat {
+  text-align: center;
+  width: 900px;
+  height: 768px;
+  > img {
+    width: 100%;
+  }
+}
+#oecd {
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  > img {
+    width: 100%;
+  }
 }
 
 #finish {
