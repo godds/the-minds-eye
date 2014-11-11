@@ -1,10 +1,10 @@
 var overviewChart = function(selector, sortFunction) {
     var data =
         [ //{ label: "First, a story...", time: 5, id: "a-story" },
-          { label: "Thinking, Fast and Slow", time: 4, id: "thinking-fast-and-slow" },
+          { label: "Thinking, Fast and Slow", time: 3, id: "thinking-fast-and-slow" },
           { label: "Why Visualisation?", time: 2, id: "why-visualisation" },
-          { label: "How We See", time: 10, id: "visual-process" },
-          { label: "Perceiving Values", time: 8, id: "perceiving-values" },
+          { label: "How We See", time: 9, id: "visual-process" },
+          { label: "Perceiving Values", time: 6, id: "perceiving-values" },
           { label: "Perceiving Relationships", time: 7, id: "perceiving-relationships" } ];
 
     if (sortFunction) {
@@ -58,7 +58,7 @@ var overviewChart = function(selector, sortFunction) {
 };
 
 var barChart = function(selector) {
-    var data = [ 8, 10, 12, 8, 5, 2 ];
+    var data = [ 8, 10, 7, 5, 2 ];
 
     var margin = { top: 10, right: 10, bottom: 30, left: 30 },
         width = 640 - margin.left - margin.right,

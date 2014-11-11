@@ -317,27 +317,20 @@ h1, h2, h3, h4, h5 {
 
 #system1-example {
   text-align: center;
+  width: 600px;
+  height: 435px;
   img {
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    top: 50%;
-    margin-top: -225px;
+    width: 100%;
   }
   &.past {
     opacity: 1;
   }
 }
 #system2-example {
+  height: 150px;
   h1 {
     font-size: 72px;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    left: 50%;
-    margin-left: -170px;
   }
   &.past {
     opacity: 1;
@@ -597,6 +590,21 @@ h1, h2, h3, h4, h5 {
 #preattentive-processing-example2 .de-emphasise {
   opacity: 0.3;
 }
+#values-relationships {
+  width: 600px;
+
+  > h2 {
+    font-size: 48px;
+    position: absolute;
+    top: 40%;
+    &.values {
+      left: 0;
+    }
+    &.relationships {
+      right: 0;
+    }
+  }
+}
 #preattentive-visual-attributes {
   width: 579px;
   height: 680px;
@@ -751,6 +759,11 @@ h1, h2, h3, h4, h5 {
     opacity: 0;
   }
 }
+#gestalt-connection-example {
+  > svg {
+    width: 100%;
+  }
+}
 #gestalt-principles,
 #ordering {
   height: 100px;
@@ -842,5 +855,14 @@ h1, h2, h3, h4, h5 {
     color: @grey;
     margin: 0;
     padding: 0;
+  }
+  .background {
+    background-color: @white;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    top: -500px;
+    left: -500px;
+    z-index: -500;
   }
 }

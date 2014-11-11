@@ -253,26 +253,21 @@ h5 {
 }
 #system1-example {
   text-align: center;
+  width: 600px;
+  height: 435px;
 }
 #system1-example img {
-  width: 300px;
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  top: 50%;
-  margin-top: -225px;
+  width: 100%;
 }
 #system1-example.past {
   opacity: 1;
 }
+#system2-example {
+  height: 150px;
+}
 #system2-example h1 {
   font-size: 72px;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  left: 50%;
-  margin-left: -170px;
 }
 #system2-example.past {
   opacity: 1;
@@ -545,6 +540,20 @@ h5 {
 #preattentive-processing-example2 .de-emphasise {
   opacity: 0.3;
 }
+#values-relationships {
+  width: 600px;
+}
+#values-relationships > h2 {
+  font-size: 48px;
+  position: absolute;
+  top: 40%;
+}
+#values-relationships > h2.values {
+  left: 0;
+}
+#values-relationships > h2.relationships {
+  right: 0;
+}
 #preattentive-visual-attributes {
   width: 579px;
   height: 680px;
@@ -679,6 +688,9 @@ h5 {
 .impress-on-gestalt-connection-example #gestalt-connection {
   opacity: 0;
 }
+#gestalt-connection-example > svg {
+  width: 100%;
+}
 #gestalt-principles,
 #ordering {
   height: 100px;
@@ -771,4 +783,13 @@ h5 {
   color: #888888;
   margin: 0;
   padding: 0;
+}
+#finish .background {
+  background-color: #fafafa;
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  top: -500px;
+  left: -500px;
+  z-index: -500;
 }
