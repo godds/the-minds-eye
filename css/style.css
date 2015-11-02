@@ -1,9 +1,10 @@
 @import "normalize.css";
+@import "fonts.css";
 body {
-  background: #333333;
-  font-family: "Helvetica Nueue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #ffffff;
+  background: #fafafa;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #333333;
   min-height: 740px;
   line-height: 1.4;
 }
@@ -12,7 +13,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 .step {
@@ -40,6 +41,7 @@ h5 {
   padding: 0;
   bottom: 0;
   text-align: center;
+  font-weight: 200;
 }
 #title h1 {
   font-size: 72px;
@@ -47,7 +49,7 @@ h5 {
 }
 #title h2 {
   font-size: 48px;
-  color: #aaaaaa;
+  color: #888888;
   margin: 0 0 0 12px;
 }
 #title h3 {
@@ -77,22 +79,22 @@ h5 {
   fill: #3584a0;
 }
 #overview text {
-  fill: #ffffff;
+  fill: #333333;
   font-size: 28px;
 }
 #overview .axis path,
 #overview .axis line {
   fill: none;
-  stroke: #aaaaaa;
+  stroke: #888888;
   shape-rendering: crispEdges;
 }
 #overview .axis text {
   font-size: 20px;
-  fill: #aaaaaa;
+  fill: #888888;
 }
 #overview .axis-title {
   font-size: 24px;
-  fill: #aaaaaa;
+  fill: #888888;
 }
 #overview.past {
   opacity: 1;
@@ -105,6 +107,16 @@ h5 {
 .impress-on-thinking-fast-and-slow #overview.past .visual-process,
 .impress-on-thinking-fast-and-slow #overview.past .perceiving-values,
 .impress-on-thinking-fast-and-slow #overview.past .perceiving-relationships {
+  opacity: 0.4;
+}
+.impress-on-why-visualisation #overview.past {
+  opacity: 1;
+}
+.impress-on-why-visualisation #overview.past .a-story,
+.impress-on-why-visualisation #overview.past .thinking-fast-and-slow,
+.impress-on-why-visualisation #overview.past .visual-process,
+.impress-on-why-visualisation #overview.past .perceiving-values,
+.impress-on-why-visualisation #overview.past .perceiving-relationships {
   opacity: 0.4;
 }
 .impress-on-visual-process #overview.past {
@@ -161,13 +173,14 @@ h5 {
 #john-arbuthnot-table table {
   float: left;
   margin-right: 30px;
-  font-family: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   font-size: 20px;
   line-height: 24px;
   text-align: right;
 }
 #john-arbuthnot-table table thead {
-  font-family: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 }
 #john-arbuthnot-table table thead td {
   padding-bottom: 5px;
@@ -187,6 +200,7 @@ h5 {
 }
 #john-arbuthnot-chart svg {
   margin-top: -65px;
+  font-weight: 200;
 }
 #john-arbuthnot-chart.past {
   opacity: 1;
@@ -231,7 +245,7 @@ h5 {
 }
 #data-visualisation blockquote footer {
   font-size: 36px;
-  color: #aaaaaa;
+  color: #888888;
   margin-left: 50px;
 }
 #data-visualisation.past {
@@ -239,26 +253,21 @@ h5 {
 }
 #system1-example {
   text-align: center;
+  width: 600px;
+  height: 435px;
 }
 #system1-example img {
-  width: 300px;
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  top: 50%;
-  margin-top: -225px;
+  width: 100%;
 }
 #system1-example.past {
   opacity: 1;
 }
+#system2-example {
+  height: 150px;
+}
 #system2-example h1 {
   font-size: 72px;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  left: 50%;
-  margin-left: -170px;
 }
 #system2-example.past {
   opacity: 1;
@@ -270,13 +279,6 @@ h5 {
 }
 #system1-vs-system2-4.past {
   opacity: 1;
-}
-#why-visualisation {
-  text-align: center;
-}
-#why-visualisation > svg {
-  fill: #ffffff;
-  width: 70%;
 }
 #senses-bandwidth {
   width: 820px;
@@ -492,7 +494,7 @@ h5 {
   left: 459px;
   top: 100px;
   fill: none;
-  stroke: #ffffff;
+  stroke: #333333;
 }
 #visual-process-overview h2 {
   display: inline-block;
@@ -501,7 +503,7 @@ h5 {
   font-size: 50px;
   position: absolute;
   top: 120px;
-  color: #ffffff;
+  color: #333333;
 }
 #visual-process-overview h2.system-1 {
   left: 160px;
@@ -510,7 +512,7 @@ h5 {
   left: 550px;
 }
 #preattentive-processing {
-  width: 600px;
+  width: 700px;
   height: 200px;
   text-align: center;
 }
@@ -538,14 +540,19 @@ h5 {
 #preattentive-processing-example2 .de-emphasise {
   opacity: 0.3;
 }
-#perceiving-values {
+#values-relationships {
   width: 600px;
 }
-#perceiving-values h3 {
+#values-relationships > h2 {
   font-size: 48px;
-  display: inline-block;
   position: absolute;
-  top: 420px;
+  top: 40%;
+}
+#values-relationships > h2.values {
+  left: 0;
+}
+#values-relationships > h2.relationships {
+  right: 0;
 }
 #preattentive-visual-attributes {
   width: 579px;
@@ -610,7 +617,7 @@ h5 {
 #bar-chart .axis path,
 #bar-chart .axis line {
   fill: none;
-  stroke: #aaaaaa;
+  stroke: #888888;
   shape-rendering: crispEdges;
 }
 #bar-chart .axis text {
@@ -668,12 +675,12 @@ h5 {
 #gestalt-similarity-example .axis path,
 #gestalt-similarity-example .axis line {
   fill: none;
-  stroke: #aaaaaa;
+  stroke: #888888;
   shape-rendering: crispEdges;
 }
 #gestalt-similarity-example .axis text {
   font-size: 20px;
-  fill: #aaaaaa;
+  fill: #888888;
 }
 .impress-on-gestalt-proximity-example2 #gestalt-proximity {
   opacity: 0;
@@ -685,29 +692,14 @@ h5 {
 .impress-on-gestalt-enclosure-example2 #gestalt-enclosure {
   opacity: 0;
 }
-#gestalt-enclosure-example2 svg {
-  width: 300px;
-  height: 250px;
-  position: absolute;
-}
-#gestalt-enclosure-example2 svg:nth-child(1) {
-  top: 0;
-  left: 0;
-}
-#gestalt-enclosure-example2 svg:nth-child(2) {
-  top: 0;
-  right: 0;
-}
-#gestalt-enclosure-example2 svg:nth-child(3) {
-  bottom: 0;
-  left: 0;
-}
-#gestalt-enclosure-example2 svg:nth-child(4) {
-  bottom: 0;
-  right: 0;
+#gestalt-enclosure-example > img {
+  width: 100%;
 }
 .impress-on-gestalt-connection-example #gestalt-connection {
   opacity: 0;
+}
+#gestalt-connection-example > svg {
+  width: 100%;
 }
 #gestalt-principles,
 #ordering {
@@ -737,41 +729,70 @@ h5 {
   fill: #3584a0;
 }
 .ordering-example text {
-  fill: #ffffff;
+  fill: #333333;
   font-size: 28px;
 }
 .ordering-example .axis path,
 .ordering-example .axis line {
   fill: none;
-  stroke: #aaaaaa;
+  stroke: #888888;
   shape-rendering: crispEdges;
 }
 .ordering-example .axis text {
   font-size: 20px;
-  fill: #aaaaaa;
+  fill: #888888;
 }
 .ordering-example .axis-title {
   font-size: 24px;
-  fill: #aaaaaa;
+  fill: #888888;
 }
 .ordering-example.past {
   opacity: 1;
 }
-#hannah-fairfield {
+#fairfield {
   text-align: center;
+  width: 1000px;
 }
-#hannah-fairfield > img {
-  height: 660px;
+#fairfield > svg {
+  width: 100%;
 }
-#hannah-fairfield.past {
+#fairfield .toggle {
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -ms-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.impress-on-fairfield2 #fairfield {
   opacity: 1;
 }
-#recommended-reading {
-  width: 1035px;
-  height: 320px;
+.impress-on-fairfield2 #fairfield .toggle {
+  opacity: 1;
 }
-#recommended-reading > img {
-  height: 320px;
+#intraday {
+  text-align: center;
+  width: 1200px;
+  height: 744px;
+}
+#intraday > img {
+  width: 100%;
+}
+#tradestack {
+  text-align: center;
+  width: 900px;
+  height: 650px;
+}
+#tradestack > img {
+  width: 100%;
+}
+#topq {
+  text-align: center;
+  width: 900px;
+  height: 740px;
+}
+#topq > img {
+  width: 100%;
 }
 #finish {
   height: 400px;
@@ -791,7 +812,16 @@ h5 {
 }
 #finish h5 {
   font-size: 24px;
-  color: #aaaaaa;
+  color: #888888;
   margin: 0;
   padding: 0;
+}
+#finish .background {
+  background-color: #fafafa;
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  top: -500px;
+  left: -500px;
+  z-index: -500;
 }

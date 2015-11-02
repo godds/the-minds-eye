@@ -1,18 +1,21 @@
+// out: style.css, sourcemap: false, compress: false
+
 @import "normalize.css";
+@import "fonts.css";
 
 @black: #333;
-@white: #fff;
+@white: #fafafa;
 @blue: #3584a0;
-@grey: #aaa;
+@grey: #888;
 
-@sansFontFamily: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+@sansFontFamily: "Fira Sans", Helvetica, Arial, sans-serif;
 @lightSansFontFamily: @sansFontFamily;
 
 body {
-  background: @black;
+  background: @white;
   font-family: @sansFontFamily;
-  font-weight: normal;
-  color: @white;
+  font-weight: 300;
+  color: @black;
   min-height: 740px;
   line-height: 1.4;
 }
@@ -73,6 +76,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   bottom: 0;
   text-align: center;
+  font-weight: 200;
 }
 
 #title {
@@ -113,7 +117,7 @@ h1, h2, h3, h4, h5 {
     fill: @blue;
   }
   text {
-    fill: @white;
+    fill: @black;
     font-size: 28px;
   }
   .axis {
@@ -141,6 +145,17 @@ h1, h2, h3, h4, h5 {
 
     .a-story,
     .why-visualisation,
+    .visual-process,
+    .perceiving-values,
+    .perceiving-relationships {
+      opacity: 0.4;
+    }
+  }
+  .impress-on-why-visualisation &.past {
+    opacity: 1;
+
+    .a-story,
+    .thinking-fast-and-slow,
     .visual-process,
     .perceiving-values,
     .perceiving-relationships {
@@ -210,6 +225,7 @@ h1, h2, h3, h4, h5 {
     margin-right: 30px;
 
     font-family: @lightSansFontFamily;
+    font-weight: 200;
     font-size: 20px;
     line-height: 24px;
     text-align: right;
@@ -239,6 +255,7 @@ h1, h2, h3, h4, h5 {
   }
   svg {
     margin-top: -65px;
+    font-weight: 200;
   }
   &.past {
     opacity: 1;
@@ -302,27 +319,20 @@ h1, h2, h3, h4, h5 {
 
 #system1-example {
   text-align: center;
+  width: 600px;
+  height: 435px;
   img {
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    top: 50%;
-    margin-top: -225px;
+    width: 100%;
   }
   &.past {
     opacity: 1;
   }
 }
 #system2-example {
+  height: 150px;
   h1 {
     font-size: 72px;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    left: 50%;
-    margin-left: -170px;
   }
   &.past {
     opacity: 1;
@@ -339,13 +349,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-#why-visualisation {
-  text-align: center;
-  > svg {
-    fill: @white;
-    width: 70%;
-  }
-}
 #senses-bandwidth {
   width: 820px;
   height: 620px;
@@ -541,7 +544,7 @@ h1, h2, h3, h4, h5 {
     left: 459px;
     top: 100px;
     fill: none;
-    stroke: @white;
+    stroke: @black;
   }
   h2 {
     display: inline-block;
@@ -550,7 +553,7 @@ h1, h2, h3, h4, h5 {
     font-size: 50px;
     position: absolute;
     top: 120px;
-    color: @white;
+    color: @black;
 
     &.system-1 {
       left: 160px;
@@ -562,7 +565,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #preattentive-processing {
-  width: 600px;
+  width: 700px;
   height: 200px;
   text-align: center;
   &.past {
@@ -589,15 +592,20 @@ h1, h2, h3, h4, h5 {
 #preattentive-processing-example2 .de-emphasise {
   opacity: 0.3;
 }
-#perceiving-values {
-    width: 600px;
+#values-relationships {
+  width: 600px;
 
-    h3 {
-        font-size: 48px;
-        display: inline-block;
-        position: absolute;
-        top: 420px;
+  > h2 {
+    font-size: 48px;
+    position: absolute;
+    top: 40%;
+    &.values {
+      left: 0;
     }
+    &.relationships {
+      right: 0;
+    }
+  }
 }
 #preattentive-visual-attributes {
   width: 579px;
@@ -754,32 +762,19 @@ h1, h2, h3, h4, h5 {
     opacity: 0;
   }
 }
-#gestalt-enclosure-example2 {
-  svg {
-    width: 300px;
-    height: 250px;
-    position: absolute;
-    &:nth-child(1) {
-      top: 0;
-      left: 0;
-    }
-    &:nth-child(2) {
-      top: 0;
-      right: 0;
-    }
-    &:nth-child(3) {
-      bottom: 0;
-      left: 0;
-    }
-    &:nth-child(4) {
-      bottom: 0;
-      right: 0;
-    }
+#gestalt-enclosure-example {
+  > img {
+    width: 100%;
   }
 }
 #gestalt-connection {
   .impress-on-gestalt-connection-example & {
     opacity: 0;
+  }
+}
+#gestalt-connection-example {
+  > svg {
+    width: 100%;
   }
 }
 #gestalt-principles,
@@ -808,7 +803,7 @@ h1, h2, h3, h4, h5 {
     fill: @blue;
   }
   text {
-    fill: @white;
+    fill: @black;
     font-size: 28px;
   }
   .axis {
@@ -830,23 +825,46 @@ h1, h2, h3, h4, h5 {
     opacity: 1;
   }
 }
-#hannah-fairfield {
+#fairfield {
   text-align: center;
-  > img {
-    height: 660px;
+  width: 1000px;
+  > svg {
+    width: 100%;
   }
-  &.past {
+  .toggle {
+    opacity: 0;
+    .transition(opacity 0.6s);
+  }
+  .impress-on-fairfield2 & {
     opacity: 1;
+    .toggle {
+      opacity: 1;
+    }
   }
 }
-
-#recommended-reading {
-  width: 1035px;
-  height: 320px;
-
-    > img {
-        height: 320px;
-    }
+#intraday {
+  text-align: center;
+  width: 1200px;
+  height: 744px;
+  > img {
+    width: 100%;
+  }
+}
+#tradestack {
+  text-align: center;
+  width: 900px;
+  height: 650px;
+  > img {
+    width: 100%;
+  }
+}
+#topq {
+  text-align: center;
+  width: 900px;
+  height: 740px;
+  > img {
+    width: 100%;
+  }
 }
 
 #finish {
@@ -868,5 +886,14 @@ h1, h2, h3, h4, h5 {
     color: @grey;
     margin: 0;
     padding: 0;
+  }
+  .background {
+    background-color: @white;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    top: -500px;
+    left: -500px;
+    z-index: -500;
   }
 }
