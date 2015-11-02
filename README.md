@@ -8,9 +8,9 @@ Scientific research is beginning to provide an insight into the neurological and
 
 Graham is a designer and developer working across desktop, web and mobile, specialising in data visualisation. As Head of User Experience at Scott Logic, he works primarily with financial services institutions, designing, building and improving their research and analysis tools. He likes to educate coders about the concept of users and artists about the reality of technology, or just [rant and rave at whoever will listen](http://www.scottlogic.co.uk/blog/graham/).
 
-##[Hand-out Notes](https://github.com/godds/the-minds-eye/blob/master/TheMindsEye.pdf)
-
 ###Presented at:
+* RBS Tech Stock (10th November 2015)
+* DIBI 2014 (11th November 2014)
 * [UX Cambridge 2013](http://uxcambridge.net/uxc2013/sessions/index.php?session=4) (5th & 6th September 2013)
 * [UX Scotland 2013](http://uxscotland.net/sessions/index.php?session=6) (20th & 21st June 2013)
 * [UXPA-Scotland](http://uxpa-scotland.org/events.php/the-minds-eye-the-science-behind-data-visualisation) (23rd April 2013)

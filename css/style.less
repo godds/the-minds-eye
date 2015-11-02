@@ -1,3 +1,5 @@
+// out: style.css, sourcemap: false, compress: false
+
 @import "normalize.css";
 @import "fonts.css";
 
@@ -818,19 +820,37 @@ h1, h2, h3, h4, h5 {
   > svg {
     width: 100%;
   }
+  .toggle {
+    opacity: 0;
+    .transition(opacity 0.6s);
+  }
+  .impress-on-fairfield2 & {
+    opacity: 1;
+    .toggle {
+      opacity: 1;
+    }
+  }
 }
-#accurat {
+#intraday {
   text-align: center;
-  width: 900px;
-  height: 768px;
+  width: 1200px;
+  height: 744px;
   > img {
     width: 100%;
   }
 }
-#oecd {
+#tradestack {
   text-align: center;
   width: 900px;
-  height: 500px;
+  height: 650px;
+  > img {
+    width: 100%;
+  }
+}
+#topq {
+  text-align: center;
+  width: 900px;
+  height: 740px;
   > img {
     width: 100%;
   }
