@@ -770,20 +770,20 @@ h5 {
 .impress-on-fairfield2 #fairfield .toggle {
   opacity: 1;
 }
+#stockflux {
+  text-align: center;
+  width: 900px;
+  height: 650px;
+}
+#stockflux > img {
+  width: 100%;
+}
 #intraday {
   text-align: center;
   width: 1200px;
   height: 744px;
 }
 #intraday > img {
-  width: 100%;
-}
-#tradestack {
-  text-align: center;
-  width: 900px;
-  height: 650px;
-}
-#tradestack > img {
   width: 100%;
 }
 #topq {
