@@ -192,7 +192,7 @@ h5 {
   opacity: 1;
 }
 .impress-on-john-arbuthnot-table2 #john-arbuthnot-table .uninteresting {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 #john-arbuthnot-chart h1 {
   text-align: center;
@@ -538,7 +538,7 @@ h5 {
   margin: 0;
 }
 #preattentive-processing-example2 .de-emphasise {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 #values-relationships {
   width: 600px;
@@ -562,11 +562,11 @@ h5 {
   opacity: 1;
 }
 .impress-on-quantitative-preattentive-visual-attributes #preattentive-visual-attributes .not-quantitative {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .impress-on-precise-quantitative-preattentive-visual-attributes #preattentive-visual-attributes .not-quantitative,
 .impress-on-precise-quantitative-preattentive-visual-attributes #preattentive-visual-attributes .not-precise-quantitative {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .impress-on-cleveland-mcgill #preattentive-visual-attributes,
 .impress-on-bar-chart #preattentive-visual-attributes,
