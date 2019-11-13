@@ -72,6 +72,9 @@ var barChart = function(selector) {
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left");
+    var colour = d3.scale.ordinal()
+        .range(["#3585a0", "#ffcb4e", "#ff694e", "#ba399d", "#39bb65"])
+        .domain(data);
     var svg = d3.select(selector).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -84,7 +87,8 @@ var barChart = function(selector) {
         .attr("x", function(d) { return x(d); })
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d); })
-        .attr("height", function(d) { return height - y(d); });
+        .attr("height", function(d) { return height - y(d); })
+        .style("fill", function(d) { return colour(d.data); });
     svg.append("g")
         .attr("class", "axis")
         .call(yAxis);
