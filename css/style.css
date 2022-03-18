@@ -611,9 +611,6 @@ h5 {
 #bar-chart {
   height: 490px;
 }
-#bar-chart rect {
-  fill: #3584a0;
-}
 #bar-chart .axis path,
 #bar-chart .axis line {
   fill: none;

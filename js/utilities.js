@@ -59,7 +59,6 @@ var overviewChart = function(selector, sortFunction) {
 
 var barChart = function(selector) {
     var data = [ 8, 10, 7, 5, 2 ];
-
     var margin = { top: 10, right: 10, bottom: 30, left: 30 },
         width = 640 - margin.left - margin.right,
         height = 490 - margin.top - margin.bottom;
