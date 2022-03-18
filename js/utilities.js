@@ -87,7 +87,7 @@ var barChart = function(selector) {
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d); })
         .attr("height", function(d) { return height - y(d); })
-        .style("fill", function(d) { return colour(d.data); });
+        .style("fill", function(d) { return colour(d); });
     svg.append("g")
         .attr("class", "axis")
         .call(yAxis);
